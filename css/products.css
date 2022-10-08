@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section{
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+/* .main{
+    max-width: 100%;
+}  */
+.header{
+  
+   width: 100%;
+}
+.container{
+   max-width: 1200px;
+   margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.small-container{
+    max-width: 900px;
+    margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+.logo img{
+    width: 100px;
+}
+.navbar{
+    margin-bottom: 100px;
+
+
+
+    display: flex;
+    align-items: center;
+  padding:20px
+}
+nav{
+     padding-top: 15px; 
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #555;
+    
+    font-size: 14px;
+    text-decoration: none!important;
+}
+.cart{
+    width: 25px;
+}
+.menu-icon{
+    width: 25px;
+   margin-left: 20px;
+    display: none;
+}
+/*----hero section----*/
+h1{
+    font-weight: 800;
+}
+h2{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(56, 55, 55);
+    margin-bottom: 100px;
+    position: relative;
+    line-height: 60px;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background:rgb(226, 70, 43);
+  left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    margin-top: 10px;
+}
+p{
+    line-height: 1.3rem;
+    color: #555;
+    margin: 15px 0;
+   }
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.col-md-2{
+    flex-basis: 50%;
+    min-width: 500px;
+}
+
+.col-md-2 img{
+    max-width:100% ;
+}
+.btn{
+    padding: 8px 30px;
+    background-color: rgb(226, 70, 43);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/*----Feature section----*/
+.feature-head{
+    display: flex;
+  justify-content: space-between;
+    margin-bottom: 90px;
+}
+select{
+    border: 1px solid #8a8686;
+    padding: 5px;
+}
+select:focus{
+    outline: 0;
+}
+.products img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow:  2px 1px 15px rgb(187, 182, 182);
+    position: relative;
+    
+}
+.products{
+    transition: transform 0.5s;
+}
+ .products:hover{
+   transform:translateY(-5px);
+
+} 
+.star-icon{
+    color: rgb(226, 70, 43);
+}
+
+.feature{
+    margin-bottom: 70px;
+}
+
+.latest .row{
+    margin-bottom: 50px;
+}
+
+
+.page-btn span{
+    display: inline-block;
+    border: 2px solid rgb(226, 70, 43);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 70px;
+text-align: center;
+line-height: 20px;/*----important thing----*/
+cursor: pointer;
+margin-right: 10px;
+transition: .3s;
+}
+.page-btn span:hover{
+    background: rgb(226, 70, 43);
+    color: #fff;
+}
+
+
+
+
+
+/*----footer section----*/
+.footer{
+    background-color: rgb(29, 25, 25);
+    color: #fff;
+    padding-top: 80px;
+}
+.footer p{
+    color: rgb(107, 105, 105);
+}
+.footer li{
+    list-style-type: none;
+    color: rgb(107, 105, 105);
+}
+.footer img{
+    width: 100px;
+}
+.foot-left{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+}
+.footer hr{
+    margin-top: 100px;
+   
+    color:rgb(107, 105, 105) ;
+}
+ .foot{
+    text-align: center;
+
+}
+.foot .underline{
+    background: rgb(88, 85, 85);
+    width: 100%;
+    height: 2px;
+    margin-top: 50px;
+}
+.foot p{
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*----responsive section----*/
+
+@media only screen and (max-width: 800px){
+    .navbar{
+        margin-bottom: 150px;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    } 
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .test{
+        margin-bottom: 20px;
+    }
+    .brand img{
+        margin: auto;
+    }
+    .app{
+        
+        margin-bottom: 30px;
+    }.text-center{
+        margin-bottom: 30px;
+    }
+    .row{
+        text-align: center;
+    }
+
+    .page-btn{
+        text-align: center;
+    }
+}
+
+
